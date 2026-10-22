@@ -1,0 +1,367 @@
+/* Общие сбросы стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F1D19  ; /* Сине-фиолетовый фон как на макете */
+    font-family: 'Chicle', cursive, sans-serif;
+    color: #f7f5ee; /* Светло-кремовый цвет текста */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+
+}
+
+/* Шапка сайта */
+.header {
+    width: 100%;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+}
+
+/* Логотип */
+.logo {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+/* Меню навигации */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0 20px;
+}
+
+.nav-link {
+    color: #f7f5ee;
+    text-decoration: none;
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Секция с главным изображением */
+.hero-container {
+    padding: 0 15px 25px 15px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image {
+    width: 100%;
+    height: 156vh;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Адаптив под мобильные устройства */
+@media (max-width: 600px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .hero-image {
+        height: 45vh;
+    }
+}
+
+/* Общие сбросы стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F1D19; /* Сине-фиолетовый фон */
+    color: #f0f0f0; /* Светло-кремовый цвет текста */
+    font-family: 'EB Garamond', Georgia, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка сайта */
+.header {
+    width: 100%;
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Chicle', cursive, sans-serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+/* Меню навигации */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.nav-link {
+    font-family: 'Chicle', cursive, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Основной контент страницы Contact */
+.content-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 30px 80px 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-family: 'Chicle', cursive, sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.info-text {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.info-text p {
+    margin-bottom: 4px;
+}
+
+.description {
+    max-width: 780px;
+    text-align: justify;
+}
+
+/* Подвал сайта (Footer) */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Адаптируемость под мобильные экраны */
+@media (max-width: 650px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Общие стили для фона страницы */
+body {
+  background-color: #0F1D19;
+  color: #e6edf3;
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Контейнер основного контента */
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #0F1D19;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Главный заголовок страницы */
+.page-title {
+  font-family: 'Chicle', cursive;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Стили текста и заголовка внутри статьи */
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #c9d1d9;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.li-text {
+ font-size: 16px;
+  line-height: 1.6;
+  color: #c9d1d9;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/* Выделенный абзац-цитата */
+.about-highlight {
+  border-left: 3px solid #d4af37;
+  padding-left: 15px;
+  margin: 25px 0;
+  color: #fff !important;
+}
+
+/* Красивый список преимуществ */
+.about-features {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.about-features li {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  background: #161f2b;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #212c3c;
+}
+
+.about-features li span {
+  margin-right: 12px;
+  font-size: 1.3rem;
+}
+
+/* Финальный слоган */
+.about-slogan {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #d4af37 !important;
+  margin-top: 35px;
+  letter-spacing: 1px;
+}
+
+.li-text {
+
+}
+
+/* Подвал (Footer) */
+.footer {
+  margin-top: auto;
+  background-color: #090d13;
+  border-top: 1px solid #212c3c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+.footer-address, .footer-hours {
+  letter-spacing: 1px;
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 600px) {
+  .about-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
